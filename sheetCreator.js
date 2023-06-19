@@ -22,7 +22,7 @@ const maxCol = worksheet.actualColumnCount
 for(let col =1; col<= maxCol; col++){
   const column = worksheet.getColumn(nextChar('A',col-1))
   if(fields.get(inputFields[col-1]))
-  column.width = fields.get(inputFields[col-1])?.width
+  column.width = fields.get(inputFields[col-1]).width
   else
   column.width = 0
 }
@@ -30,7 +30,7 @@ for(let col =1; col<= maxCol; col++){
 for(let row =1; row<=10; row++){
     for(let col = 1;col<=maxCol;col++){
         const cell = worksheet.getCell(`${nextChar("A", col - 1)}${row}`)
-        const dataValidation = fields.get(inputFields[col-1])?.validation
+        const dataValidation = fields.get(inputFields[col-1]).validation
         cell.dataValidation= dataValidation;
     }
 }

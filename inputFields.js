@@ -6,6 +6,6 @@
     // Date Put To Use (DD/MM/YYYY)
     // Location
 
-const inputFields = ['Asset Name','Amount','Class Of Asset','Location']
+const inputFields = ['Asset Name','Date Put To Use (MM/DD/YYYY)','Location']
 
 export default inputFields
